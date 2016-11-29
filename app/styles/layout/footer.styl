@@ -1,0 +1,25 @@
+.l-footer {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    border-top: 1px solid $grey1;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+
+    @media $medium {
+        display: none;
+    }
+
+    .o-button {
+        opacity: 0.4;
+        width: 110px;
+        height: 100%;
+
+        &.is-active {
+            opacity: 1;
+        }
+    }
+}

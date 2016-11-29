@@ -1,0 +1,30 @@
+/**
+ * Media query breakpoints
+ */
+
+// mediaqueries
+$small: ('only screen and (max-width: 400px)');
+$medium: ('only screen and (min-width: 1000px)');
+$large: ('only screen and (min-width: 1400px) and (min-height: 900px)');
+$xl: ('only screen and (min-width: 1700px)');
+$ipad: ('only screen and (min-device-width : 768px) and (max-device-width : 1024px)');
+
+// dev environment flag
+body:before {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  background: gold;
+  padding: 0.5em;
+  z-index: 9999;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: black;
+  content: 'mobile';
+  pointer-events: none;
+}
+
+@media #{$small} { body:before { content: 'small'; } }
+@media #{$medium} { body:before { content: 'medium'; } }
+@media #{$large} { body:before { content: 'large'; } }
+@media #{$xl} { body:before { content: 'xl'; } }

@@ -1,0 +1,139 @@
+.m-sidebar {
+    display: none;
+    z-index: 100;
+    position: relative;
+    flex: none;
+	top: 0;
+    border-right: 1px solid $grey1;
+    background: white;
+    width: 20%;
+	max-width: 300px;
+	height: 100%;
+	transition-duration: 0.25s;
+
+    img {
+        padding: 25px 10px;
+        width: 100%;
+
+        @media $large {
+    		padding-bottom: 200px;
+    	}
+    }
+
+	@media $medium {
+		display: block;
+	}
+
+    &__social {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid $grey2;
+        padding: 10px 0;
+        background: white;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+        font-size: 0;
+
+        .o-button {
+            margin: 0 5px;
+        }
+    }
+
+    &__button {
+        border-bottom: 1px solid $grey2;
+        padding-left: 20px;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+
+        @media $large {
+            padding-left: 30px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        svg {
+            opacity: 0.4;
+        }
+
+        p {
+            display: inline-block;
+            vertical-align: top;
+            opacity: 0.5;
+            margin: 0;
+            padding: 0;
+            font-family: 'FjallaOne';
+            font-weight: 400;
+            font-size: 1.6rem;
+            letter-spacing: 0.2rem;
+
+            @media $large {
+                padding: 0 0 0 10px;
+                font-size: 1.8rem;
+            }
+        }
+
+        &.border-top {
+            border-top: 1px solid $grey2 !important;
+        }
+
+        &.is-active p, &.is-active svg {
+            opacity: 1;
+        }
+    }
+
+    &__button-picto {
+        display: inline-block;
+        width: 50px;
+        height: 60px;
+
+        @media $large {
+            height: 80px;
+        }
+    }
+
+    &.is-active {
+        width: 90px;
+
+        .m-sidebar__button {
+            padding-left: 0;
+            text-align: center;
+
+            p { display: none; }
+        }
+
+        .m-sidebar__social {
+            height: 170px;
+
+            @media $large {
+                height: 200px;
+
+                .o-button {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        opacity: 0.30;
+    	width: 100px;
+    	height: 100px;
+
+    	p {
+    		margin: 10px 0;
+    	    text-align: center;
+    	    font-size: 1.6rem;
+    	    color: white;
+    	}
+
+        &.is-active {
+            opacity: 1;
+        }
+    }
+}
