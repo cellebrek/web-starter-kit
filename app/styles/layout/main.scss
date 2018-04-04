@@ -7,8 +7,48 @@
   width: 100%;
   text-align: center;
 
+  .slick-prev, .slick-next {
+    // background: red !important;
+    width: 50%;
+    height: 100%;
+    z-index: 100;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  .slick-prev { left: 0; }
+  .slick-next { right: 0; }
+
+  a {
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+  }
+
   h2 {
-    margin: 10px 0px 80px;
+    font-family: 'roboto';
+    font-weight: 100;
+    margin: 20px 0px 100px;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  p {
+    padding-bottom: 40px;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__info {
+    padding: 0 40px;
+  }
+
+  &__contact {
+    font-weight: 100;
+    padding-bottom: 100px;
+    font-size: 1.6rem;
   }
 
   &__slider-container {
@@ -25,19 +65,19 @@
   }
 
   &__slider-item {
-    // max-width: 500px;
-    // height: 60vh !important;
-    // overflow: hidden;
-  }
 
-  &__contact {
-    padding-bottom: 100px;
   }
 
   &__logo {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 220px;
+
+    @media #{$medium} {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 300px;
+    }
   }
 
   &__content {
