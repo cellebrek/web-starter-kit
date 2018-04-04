@@ -52,88 +52,68 @@
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css"/>
   </head>
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#surveys" class="mdl-layout__tab is-active">Survey-list</a>
-          <a href="#survey" class="mdl-layout__tab">Survey-open</a>
+  <body>
+    <main class="l-main">
+      <img class="l-main__logo" src="images/logo-plurielle.png" alt="Logo Plurielle">
+
+      <div class="l-main__slider-container">
+        <div class="l-main__slider">
+          <div class="l-main__slider-item"><img src="images/HOBOA.gif" width="100%" alt=""></div>
+          <div class="l-main__slider-item"><img src="images/1.jpg" width="100%" alt=""></div>
+          <div class="l-main__slider-item"><img src="images/2.jpg" width="100%" alt=""></div>
+          <div class="l-main__slider-item"><img src="images/3.jpg" width="100%" alt=""></div>
+          <div class="l-main__slider-item"><img src="images/4.jpg" width="100%" alt=""></div>
+          <div class="l-main__slider-item"><img src="images/5.jpg" width="100%" alt=""></div>
         </div>
-      </header>
-      <!-- NAVIGATION -->
-      <nav class="l-nav">
-        <div class="l-nav__button o-button--like is-active">
-          <div class="l-nav__button-content">
-            <div class="l-nav__button-picto">
-              <svg viewBox="0 0 50 70" data-reactid=".0.2.0.2:$0.0.0"><path d="M35.382,30.744c0-5.733-4.648-10.382-10.382-10.382S14.618,25.01,14.618,30.744c0,1.795,0.456,3.483,1.257,4.957 l7.654,14.059c0.282,0.523,0.834,0.88,1.471,0.88c0.638,0,1.192-0.358,1.474-0.885l7.65-14.054 C34.926,34.228,35.382,32.539,35.382,30.744z M25,36.392c-3.12,0-5.648-2.529-5.648-5.648c0-3.12,2.529-5.648,5.648-5.648 c3.12,0,5.648,2.528,5.648,5.648S28.12,36.392,25,36.392z" data-reactid=".0.2.0.2:$0.0.0.0"></path></svg>
-            </div>
-            <p>Salle d'attente</p>
-          </div>
-        </div>
-        <div class="l-nav__button o-button--like">
-          <div class="l-nav__button-content">
-            <div class="l-nav__button-picto">
-              <svg viewBox="0 0 50 70" data-reactid=".0.2.0.2:$0.0.0"><path d="M35.382,30.744c0-5.733-4.648-10.382-10.382-10.382S14.618,25.01,14.618,30.744c0,1.795,0.456,3.483,1.257,4.957 l7.654,14.059c0.282,0.523,0.834,0.88,1.471,0.88c0.638,0,1.192-0.358,1.474-0.885l7.65-14.054 C34.926,34.228,35.382,32.539,35.382,30.744z M25,36.392c-3.12,0-5.648-2.529-5.648-5.648c0-3.12,2.529-5.648,5.648-5.648 c3.12,0,5.648,2.528,5.648,5.648S28.12,36.392,25,36.392z" data-reactid=".0.2.0.2:$0.0.0.0"></path></svg>
-            </div>
-            <p>Scores</p>
-          </div>
-        </div>
-        <div class="l-nav__button o-button--like">
-          <div class="l-nav__button-content">
-            <div class="l-nav__button-picto">
-              <svg viewBox="0 0 50 70" data-reactid=".0.2.0.2:$0.0.0"><path d="M35.382,30.744c0-5.733-4.648-10.382-10.382-10.382S14.618,25.01,14.618,30.744c0,1.795,0.456,3.483,1.257,4.957 l7.654,14.059c0.282,0.523,0.834,0.88,1.471,0.88c0.638,0,1.192-0.358,1.474-0.885l7.65-14.054 C34.926,34.228,35.382,32.539,35.382,30.744z M25,36.392c-3.12,0-5.648-2.529-5.648-5.648c0-3.12,2.529-5.648,5.648-5.648 c3.12,0,5.648,2.528,5.648,5.648S28.12,36.392,25,36.392z" data-reactid=".0.2.0.2:$0.0.0.0"></path></svg>
-            </div>
-            <p>Documents</p>
-          </div>
-        </div>
-        <div class="o-button--close">
-          <svg viewBox="0 0 50 70" data-reactid=".0.2.0.2:$0.0.0"><path d="M35.382,30.744c0-5.733-4.648-10.382-10.382-10.382S14.618,25.01,14.618,30.744c0,1.795,0.456,3.483,1.257,4.957 l7.654,14.059c0.282,0.523,0.834,0.88,1.471,0.88c0.638,0,1.192-0.358,1.474-0.885l7.65-14.054 C34.926,34.228,35.382,32.539,35.382,30.744z M25,36.392c-3.12,0-5.648-2.529-5.648-5.648c0-3.12,2.529-5.648,5.648-5.648 c3.12,0,5.648,2.528,5.648,5.648S28.12,36.392,25,36.392z" data-reactid=".0.2.0.2:$0.0.0.0"></path></svg>
-        </div>
-      </nav>
-      <main class="mdl-layout__content l-main">
-        <div class="mdl-layout__tab-panel l-main__content is-active" id="surveys">
-          <!-- LISTING -->
-          <div class="l-listing">
-            <div class="l-listing__content">
-              <div class="l-listing__header">
-                <div class="l-listing__header--title">Liste des questionnaires</div>
-              </div>
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="mdl-layout__tab-panel l-main__content" id="survey">
-          <!-- LISTING -->
-          <div class="l-listing">
-            <div class="l-listing__content">
-              <div class="l-listing__header">
-                <div class="l-listing__header--title">Question</div>
-              </div>
-              <ul>
-                  <li></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+      </div>
+
+      <h2>HORIZONS BOIS - ZAC Eurorennes - RENNES</h1>
+      <p>SITE EN CONSTRUCTION</p>
+
+      <div class="l-main__contact">CONTACT:<br />
+      ARCHITECTURE PLURIELLE<br />
+      99, allée Saint-Hélier / 35000 RENNES<br />
+      02 99 31 49 07 / contact@archi-plurielle.com<br />
+      </div>
+    </main>
 
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/slick/slick.min.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".l-main__slider").slick({
+          // normal options...
+          dots: false,
+          infinite: true,
+          speed: 300,
+          adaptiveHeight: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          autoplay: false,
+
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      });
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>

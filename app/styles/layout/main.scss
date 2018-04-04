@@ -2,7 +2,43 @@
   position: relative;
   top: 0;
   left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 100%;
+  text-align: center;
+
+  h2 {
+    margin: 10px 0px 80px;
+  }
+
+  &__slider-container {
+    margin: auto;
+    width: 100%;
+  }
+
+  &__slider {
+
+    img {
+      display: inline-block !important;
+      max-width: 900px;
+    }
+  }
+
+  &__slider-item {
+    // max-width: 500px;
+    // height: 60vh !important;
+    // overflow: hidden;
+  }
+
+  &__contact {
+    padding-bottom: 100px;
+  }
+
+  &__logo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 300px;
+  }
 
   &__content {
     position: absolute;
